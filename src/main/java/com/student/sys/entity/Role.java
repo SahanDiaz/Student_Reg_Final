@@ -5,8 +5,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.LinkedList;
 @Entity
 @Data
 @NoArgsConstructor
@@ -15,8 +13,7 @@ import java.util.LinkedList;
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "role_id")
-    private Long roleId;
+    private Long id;
     @Column(name = "role_type")
     private String roleType;
 
